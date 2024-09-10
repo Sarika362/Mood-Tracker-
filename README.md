@@ -65,6 +65,14 @@ By default, the application will be accessible at [http://127.0.0.1:5000/](http:
 
 ## Project Structure
 
+<pre>
+src<br />
+&nbsp;&nbsp;&nbsp;&nbsp;└── index.html 🖥️<br />
+&nbsp;&nbsp;&nbsp;&nbsp;└── mood_summary.html 📄<br />
+main.py 🗃️<br />
+</pre>
+
+
 - `main.py`: The main Flask application file. 🗃️
 - `src/index.html`: The main interface for logging and viewing moods. 📄
 - `src/mood_summary.html`: The page for viewing mood summary. 📄
