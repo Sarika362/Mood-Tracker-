@@ -85,7 +85,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For any questions or feedback, please contact:
 
-- **Name**: Sarika 🌟
+- **Name**: Sarika M N 🌟
 - **Email**: [sarika.mn97@gmail.com](mailto:sarika.mn97@gmail.com)
 - **GitHub**: [Sarika362](https://github.com/Sarika362) 🐙
 
