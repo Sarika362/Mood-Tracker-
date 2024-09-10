@@ -1,1 +1,15 @@
-.venv
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Virtual environment
+.venv/
+
+# Other system files
+*.idx
+
+.Mood-Tracker-
