@@ -69,7 +69,7 @@ By default, the application will be accessible at [http://127.0.0.1:5000/](http:
 src<br />
 &nbsp;&nbsp;&nbsp;&nbsp;└── index.html 🖥️<br />
 &nbsp;&nbsp;&nbsp;&nbsp;└── mood_summary.html 📄<br />
-main.py 🗃️<br />
+main.py 🗃️
 </pre>
 
 
