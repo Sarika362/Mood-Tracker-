@@ -1,0 +1,92 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Mood Tracker</h1>
+        <form action="/log" method="post">
+            <div class="form-group">
+                <label for="mood">How are you feeling?</label>
+                <select name="mood" class="form-control">
+                    <option value="Happy">Happy</option>
+                    <option value="Sad">Sad</option>
+                    <option value="Angry">Angry</option>
+                    <option value="Anxious">Anxious</option>
+                    <option value="Excited">Excited</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Log Mood</button>
+        </form>
+
+        <div class="mt-4">
+            <h2>Your Mood Log:</h2>
+            <ul class="list-group">
+                {% for mood in moods %}
+                <li class="list-group-item">{{ mood }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <a href="/clear" class="btn btn-danger mt-3">Clear Moods</a>
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Mood Tracker</h1>
+        <form action="/log" method="post">
+            <div class="form-group">
+                <label for="mood">How are you feeling?</label>
+                <select name="mood" class="form-control">
+                    <option value="Happy">Happy</option>
+                    <option value="Sad">Sad</option>
+                    <option value="Angry">Angry</option>
+                    <option value="Anxious">Anxious</option>
+                    <option value="Excited">Excited</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comment">Add a Comment (Optional):</label>
+                <textarea name="comment" class="form-control" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Log Mood</button>
+        </form>
+
+        <div class="mt-4">
+            <h2>Your Mood Log:</h2>
+            <ul class="list-group">
+                {% for entry in moods %}
+                <li class="list-group-item">
+                    <strong>{{ entry.mood }}</strong> - {{ entry.comment }}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="mt-4">
+            <h2>Mood Summary:</h2>
+            <ul class="list-group">
+                {% for mood, count in mood_summary.items() %}
+                <li class="list-group-item">{{ mood }}: {{ count }} time(s)</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <a href="/mood-summary" class="btn btn-success mt-3">View Mood Summary</a>
+        <a href="/clear" class="btn btn-danger mt-3">Clear Moods</a>
+    </div>
+</body>
+</html>
